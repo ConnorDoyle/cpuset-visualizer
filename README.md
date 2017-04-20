@@ -2,6 +2,9 @@
 
 Serves SVG output over HTTP of lstopo as viewed from inside a container.
 
+A pre-built image is available from quay.io:
+[connordoyle/cpuset-visualizer](https://quay.io/repository/connordoyle/cpuset-visualizer)
+
 ## Build
 
 ```sh
