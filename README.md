@@ -23,3 +23,7 @@ $ docker run -it --cpuset-cpus=0,2 --net=host cpuset-visualizer [$PORT]
 ## View
 
 Open [http://localhost:80](http://localhost:80) in your browser.
+
+### Example output
+
+![Example output](example-output.png)
