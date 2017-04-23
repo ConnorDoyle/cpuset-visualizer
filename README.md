@@ -17,7 +17,7 @@ The container entrypoint takes a single optional parameter to override
 the port to bind. If left unspecified, the default is `80`.
 
 ```
-$ docker run -it --cpuset-cpus=0,2 --net=host cpuset-visualizer [$PORT]
+$ docker run -it --cpuset-cpus=0,4,2,6 --net=host cpuset-visualizer [$PORT]
 ```
 
 ## View
@@ -26,4 +26,5 @@ Open [http://localhost:80](http://localhost:80) in your browser.
 
 ### Example output
 
-![Example output](example-output.png)
+![Example
+output](https://cdn.rawgit.com/ConnorDoyle/cpuset-visualizer/master/example-output.svg)
