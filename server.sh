@@ -5,7 +5,8 @@ gen_topology_forever () {
   echo "Generating topology as seen from this process every second"
   while true;
   do
-    lstopo --pid $$ --no-io --of svg > topology.svg
+    lstopo --pid $$ --no-io --of svg > topology.svg.new
+    mv topology.svg.new topology.svg
     /bin/sleep 1
   done;
 }
