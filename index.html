@@ -1,9 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>cpuset-visualizer</title>
+    <script type="text/javascript">
+      function reloadPage() {
+        console.info("reloading");
+        location.reload(true); // true - bypass cache
+      }
+
+      params = new URLSearchParams(window.location.search);
+
+      if (params.has("reload")) {
+        document.addEventListener("DOMContentLoaded", function(event) {
+          // Call reloadPage in 1 seconds.
+          setInterval(reloadPage, 1000);
+        });
+      }
+    </script>
   </head>
   <body>
-    <img src="./topology.svg"></img>
+    <img id="topology-image" src="./topology.svg" />
   </body>
 </html>
